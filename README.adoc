@@ -1,7 +1,0 @@
-= Overcast Warmth's Discord Message Styles
-
-NOTE: This repository is currently unfinished. If something looks broken, we probably know about it already.
-
-A custom Discord stylesheet that adds custom message styles for certain individuals.
-
-IMPORTANT: Requires link:https://github.com/vendicated/vencord[Vencord] and link:https://github.com/OvercastWarmth/ThemeAttributesUsernames[this user plugin]. The plugin exposes the information that the stylesheet requires to function. It is a modified version of Vencord's built-in ThemeAttributes plugin, but with the usernames exposed as well. If for any reason you do not trust the userplugin, you can instead substitute the built-in version, although doing so at the moment will render the stylesheet nothing but wasted ram. your choice '_'
