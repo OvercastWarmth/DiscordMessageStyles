@@ -53,6 +53,7 @@ li[class*=messageListItem_][data-author-username="!!__COUNCIL__!! ⏣ Overcast W
 
 // BSTRD and Geli 
 li[class*=messageListItem_][data-author-username="!!__BSTRD__!! ⇌ The_Beyond#0093"],
+li[class*=messageListItem_][data-author-username="!!__BSTRD__!! ;; Corru_System (& beyond)"],
 li[class*=messageListItem_][data-author-username="!!__GELI__!! ⏣ Overcast Warmth"] {
 	>div[class*=message_] {
 		$BSTRD-bg: linear-gradient(0deg, rgba(0, 0, 0, 0.79) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0.9) 100%), url(https://corru.observer/img/textures/stun.gif), black;
@@ -70,7 +71,8 @@ li[class*=messageListItem_][data-author-username="!!__GELI__!! ⏣ Overcast Warm
 	}
 }
 
-li[class*=messageListItem_][data-author-username="!!__BSTRD__!! ⇌ The_Beyond#0093"] {
+li[class*=messageListItem_][data-author-username="!!__BSTRD__!! ⇌ The_Beyond#0093"],
+li[class*=messageListItem_][data-author-username="!!__BSTRD__!! ;; Corru_System (& beyond)"] {
 	div[class*=messageContent_] {
 		font-family: bastard;
 		font-size: 2.5em;
@@ -91,3 +93,21 @@ li[class*=messageListItem_][data-author-username="!!__BSTRD__!! ⇌ The_Beyond#0
 		display: none;
 	}
 }
+
+// Interloper's font
+li[class*=messageListItem_][data-author-username="!!__INTERLOPER__!! // IT/ASK(S) ⇌ The_Beyond#0093"],
+li[class*=messageListItem_][data-author-username="!!__INTERLOPER__!! // IT/ASK(S) ;; Corru_System (& beyond)"] {
+	div[class*=messageContent_] .inline {
+		--barcode-size: 2rem;
+		font-family: 'Libre Barcode 128 Text', system-ui;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+		font-size: var(--barcode-size);
+		line-height: var(--barcode-size);
+	}
+}
+
+// TODO: corrusys!blurry4 destabalised background
+
+// TODO: Effigy background
