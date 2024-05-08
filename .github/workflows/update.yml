@@ -9,6 +9,8 @@ on:
 jobs:
   compile:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout main
@@ -16,7 +18,6 @@ jobs:
         with:
           path: main
 
-      # Check out the dist branch
       - name: Checkout dist
         uses: actions/checkout@v4
         with:
