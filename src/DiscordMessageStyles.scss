@@ -18,7 +18,8 @@
 // Council
 li[class*=messageListItem_][data-author-username="!!__COUNCIL__!! ⏣ Overcast Warmth"] {
 	div[class*=message_] {
-		background: url(https://corru.observer/img/textures/spotgradientinversewhite.gif), url(https://corru.observer/img/local/uncosm/ozo/ozospiral_text.png), white;
+		$council-bg: url(https://corru.observer/img/textures/spotgradientinversewhite.gif), url(https://corru.observer/img/local/uncosm/ozo/ozospiral_text.png), white;
+		background: $council-bg;
 		background-position-y: 50%, 50%, 50%;
 		background-size: cover, cover, cover;
 
@@ -33,7 +34,7 @@ li[class*=messageListItem_][data-author-username="!!__COUNCIL__!! ⏣ Overcast W
 
 		// Don't change the background when hovered 
 		&:hover {
-			background: url(https://corru.observer/img/textures/spotgradientinversewhite.gif), url(https://corru.observer/img/local/uncosm/ozo/ozospiral_text.png), white !important;
+			background: $council-bg !important;
 			background-position-y: 50%, 50%, 50% !important;
 			background-size: cover, cover, cover !important;
 		}
@@ -54,16 +55,18 @@ li[class*=messageListItem_][data-author-username="!!__COUNCIL__!! ⏣ Overcast W
 li[class*=messageListItem_][data-author-username="!!__BSTRD__!! ⇌ The_Beyond#0093"],
 li[class*=messageListItem_][data-author-username="!!__GELI__!! ⏣ Overcast Warmth"] {
 	>div[class*=message_] {
-		--BSTRD-background: linear-gradient(0deg, rgba(0, 0, 0, 0.79) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0.9) 100%), url(https://corru.observer/img/textures/stun.gif), black;
-		--background-secondary: black;
-		--background-message-hover: var(--BSTRD-background);
-		background: var(--BSTRD-background);
+		$BSTRD-bg: linear-gradient(0deg, rgba(0, 0, 0, 0.79) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0.9) 100%), url(https://corru.observer/img/textures/stun.gif), black;
+		background: $BSTRD-bg;
 		border-color: #ff0066;
 		border-style: solid;
 		border-width: 1px;
 		--text-normal: #ff0066;
 		--header-primary: #ff0066;
-		--font-display: bastard
+		--font-display: bastard;
+
+		&:hover {
+			background: $BSTRD-bg !important;
+		}
 	}
 }
 
