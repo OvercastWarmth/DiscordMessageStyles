@@ -1,7 +1,47 @@
 = Overcast Warmth's Discord Message Styles
 
-NOTE: This repository is currently unfinished. If something looks broken, we probably know about it already.
-
 A custom Discord stylesheet that adds custom message styles for certain individuals.
 
-IMPORTANT: Requires link:https://github.com/vendicated/vencord[Vencord] and link:https://github.com/OvercastWarmth/ThemeAttributesUsernames[this user plugin]. The plugin exposes the information that the stylesheet requires to function. It is a modified version of Vencord's built-in ThemeAttributes plugin, but with the usernames exposed as well. If for any reason you do not trust the userplugin, you can instead substitute the built-in version, although doing so at the moment will render the stylesheet nothing but wasted ram. your choice '_'
+PRs are encouraged if you wanna add your own stuff!!! No tutorials yet but you can ask us for help and we'll probably assist.
+
+== ok cool!! how do i use it?
+
+IMPORTANT: Requires link:https://github.com/vendicated/vencord[Vencord] with the `ThemeAttributes` plugin to function.
+
+Simply put the link to the compiled CSS (on the `dist` branch) into any place that supports links to CSS files.
+
+For example, you could put this link into your `Online Themes` list:
+....
+https://raw.githubusercontent.com/OvercastWarmth/DiscordMessageStyles/dist/DiscordMessageStyles.css
+....
+
+Or you could put this line at the top of your quick CSS
+[source,css]
+----
+@import url("https://raw.githubusercontent.com/OvercastWarmth/DiscordMessageStyles/dist/DiscordMessageStyles.css")
+----
+
+then you should be all set!
+
+Alternatively, you can compile locally. This is less supported but it helps with editing the style manually so we will still help with this a little bit!!
+
+The setup that we have going on is a tasks file in VSCode that we use to compile easily:
+
+.vscode/tasks.json
+[source,json]
+----
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile Locally",
+			"type": "shell",
+			"command": "sass .\\src\\DiscordMessageStyles.scss C:\\Users\\ringl\\AppData\\Roaming\\Vencord\\themes\\DiscordMessageStyles.css"
+		}
+	]
+}
+----
+
+It does require having link:https://sass-lang.com/[Sass] installed, and you'll need to change the target path, but it should help you with editing and seeing changes in real* time.

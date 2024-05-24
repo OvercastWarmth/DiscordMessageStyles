@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
 
 
-// corru.observer custom message styles!!!!!
+// == corru.observer custom message styles!!!!! ==
+
 // BSTRD Font
 @font-face {
 	// This is literally copypasted from the website, removed the full url due to unknown permissions with neocities/corruworks, font can be found at[https://www.onlygfx.com/newspaper-cutout-font-white-on-black-ttf/], needs to be hosted elsewhere to work 
@@ -13,6 +14,12 @@
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
+}
+
+// beech font
+@font-face {
+	font-family: 'beech';
+	src: url('https://corru.observer/fonts/Beech.woff') format('woff');
 }
 
 li[class*=messageListItem_] {
@@ -72,6 +79,7 @@ li[class*=messageListItem_] {
 				background: $BSTRD-gradient, $BSTRD-bg !important;
 			}
 		}
+
 		// // div
 		// &:has(+&)>div[class*=message_] {
 		// 	border-bottom-style: none;
@@ -106,13 +114,28 @@ li[class*=messageListItem_] {
 		}
 	}
 
-	// Bsteli outbursts font
-	&[data-author-username="!!__GELI__!! ⏣ Overcast Warmth"] strong {
-		font-family: bastard;
-		font-size: 2.5em;
-		padding-top: 0.3em;
-		padding-bottom: 0.3em;
-		line-height: 1em;
+	&[data-author-username="!!__GELI__!! ⏣ Overcast Warmth"] {
+
+		// Bsteli outbursts font
+		strong {
+			font-family: bastard;
+			font-size: 2.5em;
+			padding-top: 0.3em;
+			padding-bottom: 0.3em;
+			line-height: 1em;
+		}
+
+		// span[class*='username_'] {
+		// 	visibility: hidden;
+
+
+		// 	&:before {
+		// 		font-family: beech;
+		// 		content: 'Geli';
+		// 		visibility: visible;
+		// 		display: inline;
+		// 	}
+		// }
 	}
 
 	// Interloper's font
