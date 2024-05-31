@@ -156,20 +156,31 @@ li.messageListItem__050f9 {
 
 	// TODO: Effigy background
 
-	&[data-author-username="Blurry ⏣ Overcast Warmth"] {
+	&[data-author-username="$ ⏣ Overcast Warmth"] {
 		$background: url("https://corru.observer/img/textures/corrurippletran.gif"), url("https://corru.observer/img/textures/badstatic.gif");
 
 		div.message_ccca67 {
 			background: $background;
 			background-attachment: fixed;
-			
+
 			&:hover,
 			&.selected_e3bc5d {
 				background: $background !important;
 				background-attachment: fixed !important;
 			}
+
 			img.avatar__08316 {
 				display: none;
+			}
+
+			.username__0b0e7 {
+				font-family: "beech";
+				font-size: 1.25em;
+			}
+
+			.messageContent_abea64 {
+				font-family: "beech";
+				font-size: 1.25em;
 			}
 		}
 	}
