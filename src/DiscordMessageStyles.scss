@@ -22,11 +22,11 @@
 	src: url('https://corru.observer/fonts/Beech.woff') format('woff');
 }
 
-li[class*=messageListItem_] {
+li.messageListItem__050f9 {
 
 	// Council
 	&[data-author-username="!!__COUNCIL__!! ⏣ Overcast Warmth"] {
-		div[class*=message_] {
+		div.message_ccca67 {
 			$council-bg: url(https://corru.observer/img/textures/spotgradientinversewhite.gif), url(https://corru.observer/img/local/uncosm/ozo/ozospiral_text.png), white;
 			background: $council-bg;
 			background-position-y: 50%, 50%, 50%;
@@ -50,7 +50,7 @@ li[class*=messageListItem_] {
 		}
 
 		// Remove the bot tag because i think it looks bad idk man 
-		span[class*=botTagCozy_] {
+		span.botTagCozy__85d43 {
 			display: none;
 		}
 
@@ -64,7 +64,7 @@ li[class*=messageListItem_] {
 	&[data-author-username="!!__BSTRD__!! ⇌ The_Beyond#0093"],
 	&[data-author-username="!!__BSTRD__!! ;; Corru_System (& beyond)"],
 	&[data-author-username="!!__GELI__!! ⏣ Overcast Warmth"] {
-		>div[class*=message_] {
+		>div.message_ccca67 {
 			$BSTRD-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.79) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0.9) 100%);
 			$BSTRD-bg: url(https://corru.observer/img/textures/stun.gif), black;
 			background: $BSTRD-gradient, $BSTRD-bg;
@@ -93,7 +93,7 @@ li[class*=messageListItem_] {
 	// BSTRD's font
 	&[data-author-username="!!__BSTRD__!! ⇌ The_Beyond#0093"],
 	&[data-author-username="!!__BSTRD__!! ;; Corru_System (& beyond)"] {
-		div[class*=messageContent_] {
+		div.messageContent_abea64 {
 			font-family: bastard;
 			font-size: 2.5em;
 			padding-top: 0.3em;
@@ -101,7 +101,7 @@ li[class*=messageListItem_] {
 			line-height: 1em;
 		}
 
-		span[class*=username_] {
+		span.username__0b0e7 {
 			font-family: bastard;
 			font-size: 2em;
 			padding-top: 0.3em;
@@ -109,7 +109,7 @@ li[class*=messageListItem_] {
 			line-height: 1em;
 		}
 
-		span[class*=botTagCozy_] {
+		span.botTagCozy__85d43 {
 			display: none;
 		}
 	}
@@ -141,7 +141,7 @@ li[class*=messageListItem_] {
 	// Interloper's font
 	&[data-author-username="!!__INTERLOPER__!! // IT/ASK(S) ⇌ The_Beyond#0093"],
 	&[data-author-username="!!__INTERLOPER__!! // IT/ASK(S) ;; Corru_System (& beyond)"] {
-		div[class*=messageContent_] .inline {
+		div.messageContent_abea64 .inline {
 			--barcode-size: 2rem;
 			font-family: 'Libre Barcode 128 Text', system-ui;
 			display: inline-block;
@@ -155,4 +155,22 @@ li[class*=messageListItem_] {
 	// TODO: corrusys!blurry4 destabalised background
 
 	// TODO: Effigy background
+
+	&[data-author-username="Blurry ⏣ Overcast Warmth"] {
+		$background: url("https://corru.observer/img/textures/corrurippletran.gif"), url("https://corru.observer/img/textures/badstatic.gif");
+
+		div.message_ccca67 {
+			background: $background;
+			background-attachment: fixed;
+			
+			&:hover,
+			&.selected_e3bc5d {
+				background: $background !important;
+				background-attachment: fixed !important;
+			}
+			img.avatar__08316 {
+				display: none;
+			}
+		}
+	}
 }
