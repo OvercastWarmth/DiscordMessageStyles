@@ -44,4 +44,4 @@ The setup that we have going on is a tasks file in VSCode that we use to compile
 }
 ----
 
-It does require having link:https://sass-lang.com/[Sass] installed, and you'll need to change the target path, but it should help you with editing and seeing changes in real* time.
+It does require having link:https://sass-lang.com/[Sass] installed, and you'll need to change the target path to use your user ID, but it should help you with editing and seeing changes in real* time.
